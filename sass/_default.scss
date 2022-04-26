@@ -118,3 +118,16 @@ footer {
     }
 
 }
+@media only screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+        }
+    }
+}

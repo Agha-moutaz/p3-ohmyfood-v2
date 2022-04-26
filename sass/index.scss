@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900i');
 @import "default";
+
 main {
     .main-wrapper{
         padding: 0 2em;
@@ -43,7 +44,20 @@ main {
         }
     }
 
-    
+    .bouton-resto {
+        width: 15em;
+        border-radius: 2em;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        border: none;
+        padding: 1rem 1.5rem;
+        font-size: 1.25em;
+        margin: 0em auto;
+        background: linear-gradient(355deg,  $color-primary,  $color-secondary 100%);
+        
+    }
 
     .fonctionnement{
         padding: 1em 0;
@@ -69,7 +83,13 @@ main {
                     line-height: 6rem;
                     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 
-                   
+                    &:hover {
+                        background-color: $color-primary-hover;
+                        .icon {
+                            color: $color-primary;
+                        }    
+
+                    }   
                                     
                                
                    
@@ -81,7 +101,6 @@ main {
                         font-weight: bold;
                         margin-left: 1em;
                         font-size: 1.25em;
-
 
                     }
 
@@ -191,7 +210,30 @@ main {
                         margin: 0;
                     }
                 }
-                
+                .heart{
+                    font-size: 2em;
+                    display: flex;
+                   
+                    
+                    .filled{
+                    background : linear-gradient( 45deg, $color-secondary 50%, $color-primary 100% );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: none;
+                    
+                    }
+                    
+                    &:hover{
+                      .filled{
+                        display: block;
+                      }
+                      
+                      .empty{
+                        display: none;
+                      }
+                    }
+                    
+                }
                 
             }
         }
@@ -199,4 +241,3 @@ main {
     }
 
 }
-

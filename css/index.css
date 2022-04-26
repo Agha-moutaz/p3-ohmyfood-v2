@@ -97,6 +97,18 @@ footer ul li a .fo {
   margin-right: 0.5em;
 }
 
+@media only screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+  }
+}
 main .main-wrapper {
   padding: 0 2em;
   max-width: 80em;
@@ -133,6 +145,19 @@ main .menu h3 {
   color: #878686;
   font-weight: normal;
 }
+main .bouton-resto {
+  width: 15em;
+  border-radius: 2em;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.25em;
+  margin: 0em auto;
+  background: linear-gradient(355deg, #9365DC, #FF79DA 100%);
+}
 main .fonctionnement {
   padding: 1em 0;
 }
@@ -153,6 +178,12 @@ main .fonctionnement .container .option .context {
   border-radius: 1.5em;
   line-height: 6rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+main .fonctionnement .container .option .context:hover {
+  background-color: rgba(147, 101, 220, 0.28);
+}
+main .fonctionnement .container .option .context:hover .icon {
+  color: #9365DC;
 }
 main .fonctionnement .container .option .context .name {
   text-overflow: ellipsis;
@@ -245,6 +276,22 @@ main .fonctionnement .container .option .context .icon {
 .contenu .principal article .about .description p {
   font-size: 1rem;
   margin: 0;
+}
+.contenu .principal article .about .heart {
+  font-size: 2em;
+  display: flex;
+}
+.contenu .principal article .about .heart .filled {
+  background: linear-gradient(45deg, #FF79DA 50%, #9365DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: none;
+}
+.contenu .principal article .about .heart:hover .filled {
+  display: block;
+}
+.contenu .principal article .about .heart:hover .empty {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
