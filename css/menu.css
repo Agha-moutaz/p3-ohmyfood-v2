@@ -360,5 +360,20 @@ main .bouton-container .bouton-resto {
     padding-top: 25em;
   }
 }
+@media only screen and (min-width: 992px) {
+  main .wrapper {
+    background-position: center;
+    background-size: cover;
+    padding-top: 25em;
+  }
+  main .corp .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  main .corp .container section {
+    width: calc(33% - 2em);
+  }
+}
 
 /*# sourceMappingURL=menu.css.map */

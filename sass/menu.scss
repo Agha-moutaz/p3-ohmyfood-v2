@@ -302,4 +302,31 @@ main {
         }
     }
 }
+@media only screen and (min-width: 992px) {
+    main {
+
+        .wrapper{
+            background-position:center;
+            background-size:cover;
+            padding-top: 25em;
+
+        }
+        .corp{
+           .container {
+               display: flex;
+               flex-flow: row nowrap;
+               justify-content: space-between;
+
+               section{
+                   width: calc(33% - 2em);
+                   
+                }
+        
+                
+           }
+           
+        }
+    }
+}
+
 
