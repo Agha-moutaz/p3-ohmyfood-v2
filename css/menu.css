@@ -353,4 +353,12 @@ main .bouton-container .bouton-resto {
   background: linear-gradient(355deg, #9365DC, #FF79DA 100%);
 }
 
+@media only screen and (min-width: 768px) {
+  main .wrapper {
+    background-position: center;
+    background-size: cover;
+    padding-top: 25em;
+  }
+}
+
 /*# sourceMappingURL=menu.css.map */

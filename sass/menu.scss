@@ -291,3 +291,15 @@ main {
         }  
     }
 }
+@media only screen and (min-width: 768px) {
+    main {
+
+        .wrapper{
+            background-position:center;
+            background-size:cover;
+            padding-top: 25em;
+
+        }
+    }
+}
+
