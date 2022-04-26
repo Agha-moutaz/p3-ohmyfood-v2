@@ -17,6 +17,42 @@ html {
         font-family: 'Roboto', sans-seirf;
       margin: 0;
     }
+    #loading{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        z-index: 100;
+        background-color: #fff;
+        
+        animation-name: loading;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .modale{
+            background-image: url(../images/loader.gif);
+            width: 5em;
+            height: 5em;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @keyframes loading{
+        0%{
+            display: flex;
+          }
+
+        100%{
+            opacity: 0;
+            display: none;
+            z-index: -1;
+        }
+      }
 
 }
 
