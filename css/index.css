@@ -109,6 +109,28 @@ footer ul li a .fo {
     flex-direction: row;
   }
 }
+@media only screen and (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  footer .f-wrapper {
+    margin: auto;
+  }
+  footer .logo {
+    margin: auto;
+  }
+  footer ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+  }
+  footer ul li {
+    padding: 1em;
+  }
+}
 main .main-wrapper {
   padding: 0 2em;
   max-width: 80em;
@@ -292,6 +314,97 @@ main .fonctionnement .container .option .context .icon {
 }
 .contenu .principal article .about .heart:hover .empty {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .fonctionnement .fonctionnement.container {
+    padding: 2em;
+  }
+  .fonctionnement .fonctionnement.container .option {
+    width: 70%;
+  }
+  .fonctionnement .fonctionnement.container .option .context {
+    line-height: 6rem;
+  }
+  .fonctionnement .fonctionnement.container .option .context .name {
+    margin-left: 1em;
+    font-size: 1.25em;
+  }
+  .fonctionnement .fonctionnement.container .option .context .icon {
+    font-size: 2.5em;
+  }
+  .fonctionnement .fonctionnement.container .option .context .num {
+    font-size: 0.6em;
+  }
+
+  .contenu .principal .container-rpas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .contenu .principal .container-rpas article {
+    padding: 2em;
+    width: 25%;
+  }
+  .contenu .principal .container-rpas article .picture {
+    padding: 0;
+  }
+  .contenu .principal .container-rpas article .picture .new {
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    top: 0.5em;
+    right: 0.5em;
+  }
+  .contenu .principal .container-rpas article .about .text {
+    margin-right: 1em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fonctionnement .fonctionnement.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  .fonctionnement .fonctionnement.container .option {
+    width: 30%;
+    margin-right: 1em;
+  }
+  .fonctionnement .fonctionnement.container .option .context {
+    line-height: 6rem;
+  }
+  .fonctionnement .fonctionnement.container .option .context .name {
+    margin-left: 0.5em;
+    font-size: 1.25em;
+  }
+  .fonctionnement .fonctionnement.container .option .context .icon {
+    font-size: 1.9em;
+  }
+
+  .contenu .principal .container-repas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .contenu .principal .container-repas article {
+    padding: 2em;
+    width: 40%;
+  }
+  .contenu .principal .container-repas article .picture {
+    padding: 0;
+  }
+  .contenu .principal .container-repas article .picture .new {
+    background-color: #99E2D0;
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    top: 0.5em;
+    right: 0.5em;
+    font-weight: bold;
+    border-radius: 0.3rem;
+  }
+  .contenu .principal .container-repas article .about .description {
+    margin-right: 1em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

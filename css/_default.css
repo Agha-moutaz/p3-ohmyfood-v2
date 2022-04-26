@@ -122,3 +122,44 @@ footer {
 
 }
 
+@media only screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        text-align: center;
+
+        .f-wrapper{
+            margin: auto;
+        }
+
+        .logo{
+            margin: auto;
+        }
+    
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            li {
+                padding: 1em;   
+            }
+            
+        }
+    }   
+
+}
