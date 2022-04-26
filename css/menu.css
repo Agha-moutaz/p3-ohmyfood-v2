@@ -191,24 +191,49 @@ main .corp .a-head {
   justify-content: space-between;
   padding: 0 1em 0 1em;
 }
-main .corp .a-head .heart {
+main .corp .a-head .menu__btn {
+  height: 2em;
+  width: 2em;
+  background-color: initial;
+  border: 0 solid transparent;
+  padding: 0;
   display: flex;
-  font-size: 2em;
   align-items: center;
-  font-weight: 300;
+  justify-content: center;
   cursor: pointer;
+  position: relative;
+  background-color: #000;
+  margin-top: 2em;
 }
-main .corp .a-head .heart .filled {
-  background: linear-gradient(45deg, #FF79DA 50%, #9365DC 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: none;
+main .corp .a-head .menu__btn:hover:before {
+  opacity: 1;
 }
-main .corp .a-head .heart:active .filled {
-  display: block;
+main .corp .a-head .menu__btn:before, main .corp .a-head .menu__like {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-main .corp .a-head .heart:active .empty {
-  display: none;
+main .corp .a-head .menu__btn:before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(0deg, #9365DC, #FF79DA);
+}
+main .corp .a-head .menu__btn:hover .menu__like--noBg {
+  opacity: 0;
+}
+main .corp .a-head .card__like {
+  background-color: #f2f2f2 !important;
+}
+main .corp .a-head .menu__like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
 }
 main .corp .a-head h1 {
   font-size: 2em;

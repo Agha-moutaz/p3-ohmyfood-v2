@@ -299,21 +299,48 @@ main .fonctionnement .container .option .context .icon {
   font-size: 1rem;
   margin: 0;
 }
-.contenu .principal article .about .heart {
-  font-size: 2em;
+.contenu .principal article .about .menu__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: initial;
+  border: 0 solid transparent;
+  padding: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #000;
 }
-.contenu .principal article .about .heart .filled {
-  background: linear-gradient(45deg, #FF79DA 50%, #9365DC 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: none;
+.contenu .principal article .about .menu__btn:hover:before {
+  opacity: 1;
 }
-.contenu .principal article .about .heart:hover .filled {
-  display: block;
+.contenu .principal article .about .menu__btn:before, .contenu .principal article .about .menu__like {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-.contenu .principal article .about .heart:hover .empty {
-  display: none;
+.contenu .principal article .about .menu__btn:before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  background: linear-gradient(0deg, #9365DC, #FF79DA);
+}
+.contenu .principal article .about .menu__btn:hover .menu__like--noBg {
+  opacity: 0;
+}
+.contenu .principal article .about .card__like {
+  background-color: #fff !important;
+}
+.contenu .principal article .about .menu__like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
 }
 
 @media only screen and (min-width: 768px) {
