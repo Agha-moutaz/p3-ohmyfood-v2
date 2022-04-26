@@ -374,6 +374,31 @@ main .bouton-container .bouton-resto {
   main .corp .container section {
     width: calc(33% - 2em);
   }
+  main .corp .container section .assiette1 {
+    animation: eassiette1 1s;
+  }
+  main .corp .container section .assiette2 {
+    animation: eassiette1 1.5s;
+  }
+  main .corp .container section .assiette3 {
+    animation: eassiette1 2s;
+  }
+  main .corp .container section .assiette4 {
+    animation: eassiette1 2.5s;
+  }
+  @keyframes eassiette1 {
+    0% {
+      margin-top: 40px;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      margin-top: 10px;
+      opacity: 1;
+    }
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

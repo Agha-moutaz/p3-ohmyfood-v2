@@ -318,12 +318,43 @@ main {
                justify-content: space-between;
 
                section{
-                   width: calc(33% - 2em);
-                   
+                    width: calc(33% - 2em);
+                    .assiette1 {
+                        animation: eassiette1 1s;
+                    }
+                
+     
+                    .assiette2 {
+                        animation: eassiette1 1.5s;
+                    }
+     
+                    .assiette3 {
+                        animation: eassiette1 2s;
+                    }
+                    .assiette4 {
+                        animation: eassiette1 2.5s;
+                    }
                 }
+     
+                @keyframes eassiette1 {
+                    0% { 
+                        margin-top: 40px;
+                        opacity: 0;
+                    }
+                    40% {
+                        opacity: 0;
+                    }
+                    100% {
+                        margin-top: 10px;
+                        opacity: 1;
+                    }
+                }
+             
+            }
+
         
                 
-           }
+           
            
         }
     }
