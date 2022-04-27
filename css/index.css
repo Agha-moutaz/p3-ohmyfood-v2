@@ -300,8 +300,8 @@ main .fonctionnement .container .option .context .icon {
   margin: 0;
 }
 .contenu .principal article .about .menu__btn {
-  height: 2rem;
-  width: 2rem;
+  height: 2em;
+  width: 2em;
   background-color: initial;
   border: 0 solid transparent;
   padding: 0;
