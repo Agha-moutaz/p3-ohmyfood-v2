@@ -191,6 +191,7 @@ main .fonctionnement .container .option {
   width: calc(100% - 2em);
   height: 8em;
   margin: auto;
+  cursor: pointer;
 }
 main .fonctionnement .container .option .context {
   height: 6em;
@@ -206,6 +207,7 @@ main .fonctionnement .container .option .context:hover {
 }
 main .fonctionnement .container .option .context:hover .icon {
   color: #9365DC;
+  cursor: pointer;
 }
 main .fonctionnement .container .option .context .name {
   text-overflow: ellipsis;

@@ -73,6 +73,7 @@ main {
                 width: calc(100% - 2em);
                 height: 8em;
                 margin: auto;
+                cursor: pointer;
               
                 .context {
                     height: 6em;
@@ -82,11 +83,13 @@ main {
                     border-radius: 1.5em;
                     line-height: 6rem;
                     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+                    
 
                     &:hover {
                         background-color: $color-primary-hover;
                         .icon {
                             color: $color-primary;
+                            cursor: pointer;
                         }    
 
                     }   
@@ -101,6 +104,7 @@ main {
                         font-weight: bold;
                         margin-left: 1em;
                         font-size: 1.25em;
+                     
 
                     }
 
@@ -115,11 +119,13 @@ main {
                         text-align: center;
                         border-radius: 100%;
                         transform: translateX(-50%);
+                        
                     }
 
                     .icon {
                         color: rgba(0, 0, 0, 0.45);
                         font-size: 1.9em;
+                      
                        
                     }
                 }
