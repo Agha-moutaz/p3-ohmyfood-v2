@@ -178,7 +178,7 @@ main .bouton-resto {
   padding: 1rem 1.5rem;
   font-size: 1.25em;
   margin: 0em auto;
-  background: linear-gradient(355deg, #9365DC, #FF79DA 100%);
+  background: linear-gradient(355deg, #9356DC, #FF79DA 100%);
 }
 main .fonctionnement {
   padding: 1em 0;
@@ -206,7 +206,7 @@ main .fonctionnement .container .option .context:hover {
   background-color: rgba(147, 101, 220, 0.28);
 }
 main .fonctionnement .container .option .context:hover .icon {
-  color: #9365DC;
+  color: #9356DC;
   cursor: pointer;
 }
 main .fonctionnement .container .option .context .name {
@@ -220,7 +220,7 @@ main .fonctionnement .container .option .context .name {
 }
 main .fonctionnement .container .option .context .num {
   color: white;
-  background-color: #9365DC;
+  background-color: #9356DC;
   font-size: 0.5em;
   margin-right: 1em;
   width: 1em;
@@ -328,7 +328,7 @@ main .fonctionnement .container .option .context .icon {
   opacity: 0;
   transition: 0.5s;
   content: "";
-  background: linear-gradient(0deg, #9365DC, #FF79DA);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
 }
 .contenu .principal article .about .menu__btn:hover .menu__like--noBg {
   opacity: 0;

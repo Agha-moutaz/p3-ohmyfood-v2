@@ -218,7 +218,7 @@ main .corp .a-head .menu__btn:before {
   opacity: 0;
   transition: 0.5s;
   content: "";
-  background: linear-gradient(0deg, #9365DC, #FF79DA);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
 }
 main .corp .a-head .menu__btn:hover .menu__like--noBg {
   opacity: 0;
@@ -374,7 +374,7 @@ main .bouton-container .bouton-resto {
   cursor: pointer;
   padding: 1em;
   font-size: 1em;
-  background: linear-gradient(355deg, #9365DC, #FF79DA 100%);
+  background: linear-gradient(355deg, #9356DC, #FF79DA 100%);
 }
 
 @media only screen and (min-width: 768px) {
